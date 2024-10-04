@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Person from './Person';
 
 function App() {
+  const firstText = "kk klkk iewio j iiowe";
+  const secondtText = "maha maha iewio j iiowe";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person name="Hadeel" age="22" email="hadeel@gmail.com" text={firstText}/>
+      <Person name="Maha" age="48" email="maha@gmail.com" text={secondtText}>
+        <h1>Welcom</h1>
+        <h1>sdfjk</h1>
+      </Person>
+      <Person name="Marwa" age="23" email="marwa@gmail.com">
+        <p style={{backgroundColor:"purple"}}>Hello</p>
+      </Person>
     </div>
   );
 }
